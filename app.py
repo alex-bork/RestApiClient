@@ -5,7 +5,10 @@ from modules import *
 import os
 
 
-st.subheader("HR | REST API Tester")
+app_name = "HR | REST API Tester"
+st.set_page_config(page_title=app_name)
+st.subheader(app_name)
+st.divider()
 
 
 if "auth_active" not in st.session_state:
